@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: synthea
+    description: >
+      Raw data direct from the DuckDB files. No transformations applied.
+    schema: raw
+    tables:
+      - name: patients
+        description: one row per patient
+        columns:
+          - name: Id
+            description: unique identifier
+            tests:
+              - unique
+              - not_null
