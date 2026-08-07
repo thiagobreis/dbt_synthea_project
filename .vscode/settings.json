@@ -4,5 +4,15 @@
         "*.csv": "duckdb.dataFileViewer",
         "*.tsv": "duckdb.dataFileViewer",
         "*.xlsx": "duckdb.dataFileViewer"
-    }
+    },
+    "duckdb.databases": [
+        {
+            "alias": "dev",
+            "type": "file",
+            "path": "e:\\Thiago\\data\\study\\projects\\dbt_synthea_project\\synthea\\dev.duckdb",
+            "readOnly": true,
+            "attached": false
+        }
+    ],
+    "duckdb.defaultDatabase": "dev"
 }

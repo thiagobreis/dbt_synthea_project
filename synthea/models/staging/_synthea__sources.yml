@@ -14,3 +14,21 @@ sources:
             tests:
               - unique
               - not_null
+      - name: allergies
+      - name: careplans
+      - name: claims_transactions
+      - name: claims
+      - name: conditions
+      - name: devices
+      - name: encounters
+      - name: imaging_studies
+      - name: immunizations
+      - name: medications
+      - name: observations
+      - name: organizations
+      - name: payer_transitions
+      - name: payers
+      - name: procedures
+      - name: providers
+      - name: supplies
+
