@@ -3,6 +3,7 @@ csv/
 logs/
 synthea/profiles.yml
 synthea/dev.duckdb
+synthea/dev.duckdb.wal
 
 
 # Python
