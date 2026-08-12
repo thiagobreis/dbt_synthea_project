@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_synthea__allergies_unpivoted
+    description: >
+      Unpivoted the stg_synthea__allergies to have one row per patient/reaction
+    columns:
+      - name: id_patient
+        tests:
+          - not_null
+      - name: id_allergie
+        tests:
+          - not_null
+      - name: reaction_slot
+        tests:
+          - accepted_values:
+              values: [1, 2]

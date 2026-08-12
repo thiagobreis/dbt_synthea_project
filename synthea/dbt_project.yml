@@ -35,3 +35,15 @@ models:
     staging:
       +materialized: view
       +tags: ["staging"]
+    intermediate:
+      +materialized: ephemeral
+      +tags: ["intermediate"]
+    marts:
+      +materialized: table
+      +tags: ["marts"]
+      dimensions:
+        +tags: ["dimension"]
+      facts:
+        +tags: ["facts"]
+
+      

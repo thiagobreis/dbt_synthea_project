@@ -43,19 +43,23 @@ synthea-project/
    ```
    python scripts/load_raw_data.py
    ```
-6. Load the small reference seeds:
+6. Install dependencies:
+   ```
+   dbt deps
+   ```
+7. Load the small reference seeds:
    ```
    dbt seed
    ```
-7. Build all models:
+8. Build all models:
    ```
    dbt run
    ```
-8. Run the data tests:
+9. Run the data tests:
    ```
    dbt test
    ```
-9. Generate and view the documentation site:
+10. Generate and view the documentation site:
    ```
    dbt docs generate
    dbt docs serve
