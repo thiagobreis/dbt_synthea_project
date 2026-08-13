@@ -11,3 +11,30 @@ models:
         tests:
           - not_null
           - unique
+
+  - name: dim_patients
+    description: >
+      Unique information for each patient
+    columns:
+      - name: patient_source_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_medications
+    description: >
+      Unique information for each medication
+    columns:
+      - name: medication_source_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_procedures
+    description: >
+      Unique information for each procedure
+    columns:
+      - name: unique_id
+        tests:
+          - not_null
+          - unique
