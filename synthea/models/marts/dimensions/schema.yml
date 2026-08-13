@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_allergies
+    description: >
+      Unique information for each allergy from the stg_synthea__allergies.
+      Information about reactions were separated into the int_synthea__allergies_unpivoted
+      to be used as a fact table to have a individual information about each reaction.
+    columns:
+      - name: allergy_source_id
+        tests:
+          - not_null
+          - unique

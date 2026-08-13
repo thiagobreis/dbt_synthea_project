@@ -3,7 +3,7 @@ version: 2
 models:
   - name: int_synthea__allergies_unpivoted
     description: >
-      Unpivoted the stg_synthea__allergies to have one row per patient/reaction
+      Unpivoted the stg_synthea__allergies to have one row per patient/reaction.
     columns:
       - name: id_patient
         tests:
