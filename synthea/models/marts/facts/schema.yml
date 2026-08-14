@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fact_encounters_costs
+    description: >
+      Cost information for each encounter by type
+    columns:
+      - name: encounter_source_id
+        tests:
+          - not_null
+      - name: total_cost
+        tests:
+          - not null

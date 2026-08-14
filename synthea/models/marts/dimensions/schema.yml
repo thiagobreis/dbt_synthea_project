@@ -1,17 +1,6 @@
 version: 2
 
 models:
-  - name: dim_allergies
-    description: >
-      Unique information for each allergy from the stg_synthea__allergies.
-      Information about reactions were separated into the int_synthea__allergies_unpivoted
-      to be used as a fact table to have a individual information about each reaction.
-    columns:
-      - name: allergy_source_id
-        tests:
-          - not_null
-          - unique
-
   - name: dim_patients
     description: >
       Unique information for each patient
@@ -32,9 +21,38 @@ models:
 
   - name: dim_procedures
     description: >
-      Unique information for each procedure
+      Unique information for each procedure.
+      unique_id is a combination of 'code-description' due to multiple possible descriptions to the same procedure code
     columns:
-      - name: unique_id
+      - name: procedure_unique_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_immunizations
+    description: >
+      Unique information for each immunization
+    columns:
+      - name: immunization_source_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_organizations
+    description: >
+      Unique information for each organization
+    columns:
+      - name: organization_source_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_encounters
+    description: >
+      Unique information for each encounter
+      encounter_unique_id is a combination of 'code-description' due to multiple possible descriptions to the same encounter code
+    columns:
+      - name: encounter_unique_id
         tests:
           - not_null
           - unique
