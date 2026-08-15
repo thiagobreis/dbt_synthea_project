@@ -21,7 +21,7 @@ for t in tables:
     print(f"CREATING TABLE {t}")
     con.execute(f"""
        CREATE OR REPLACE TABLE raw.{t} AS
-       SELECT * FROM read_csv_auto('../../csv/{t}.csv', header = True)
+       SELECT * FROM read_csv_auto('../csv/{t}.csv', header = True)
     """)
     
 con.close()
