@@ -37,7 +37,7 @@ synthea-project/
 ## How to reproduce
 
 1. Clone this repository.
-2. Download and unzip the synthea.csv file with sample dataset and place it under `csv/`.
+2. Download and unzip the synthea.rar file with sample dataset and place it under `csv/`.
 3. Create and activate a Python virtual environment, then install dependencies:
    ```
    pip install dbt-duckdb duckdb
