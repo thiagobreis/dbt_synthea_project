@@ -4,7 +4,7 @@ logs/
 synthea/profiles.yml
 synthea/dev.duckdb
 synthea/dev.duckdb.wal
-
+synthea/env.env
 
 # Python
 venv/

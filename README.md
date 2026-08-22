@@ -40,7 +40,7 @@ synthea-project/
 2. Download and unzip the synthea.zip file with sample dataset and place it under `csv/`.
 3. Create and activate a Python virtual environment, then install dependencies:
    ```
-   pip install dbt-duckdb duckdb
+   pip install dbt-duckdb duckdb python-dotenv
    ```
 4. Set up the local dbt profile (safe to run even if you already have other dbt profiles on this machine):
    - Windows (PowerShell): `.\scripts\setup_profile.ps1`
